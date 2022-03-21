@@ -2,7 +2,7 @@ QF_VERSION=$1
 
 rm -rf quickfix
 
-git clone --depth 1 https://github.com/quickfix/quickfix.git
+git clone --depth 1 --branch nm-206 https://github.com/jimmcslim/quickfix.git
 rm -rf quickfix/.git
 
 pushd quickfix/doc
@@ -19,5 +19,5 @@ rm -f quickfix-$QF_VERSION.tar.gz
 tar czvf quickfix-$QF_VERSION.tar.gz quickfix
 
 pushd quickfix
-./configure --with-python2 --with-python3 --with-ruby && make && make check
+./configure --with-python3 && make && make check
 popd
