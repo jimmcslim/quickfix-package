@@ -25,4 +25,4 @@ rm -f quickfix-python/C++/stdafx.*
 
 pushd quickfix-python
 python setup.py sdist
-PYTHONWARNINGS="ignore" twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+# PYTHONWARNINGS="ignore" twine upload --repository-url https://test.pypi.org/legacy/ dist/*
